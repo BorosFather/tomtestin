@@ -8,6 +8,7 @@ import { TestComponent } from './test/test.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
 import { PopupComponent } from './popup/popup.component';
+import { UpupComponent } from './upup/upup.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { PopupComponent } from './popup/popup.component';
     AppComponent,
     AboutComponent,
     TestComponent,
-    PopupComponent
+    PopupComponent,
+    UpupComponent
   ],
   imports: [
     BrowserModule,

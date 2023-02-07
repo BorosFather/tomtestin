@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { UpupComponent } from '../upup/upup.component';
 
 @Component({
   selector: 'app-popup',
@@ -12,8 +13,12 @@ export class PopupComponent {
 
   }
 
-  openDialog(){
-    this.dialog.open(PopupComponent);
-  }
+    openDialog(){
+    this.dialog.open(UpupComponent);
+   }
+
+  
+  
+
 
 }

@@ -14,7 +14,6 @@ export class TestComponent {
 
   indexHide = false;
 
-
   constructor() { }
 
   ngOnInit(): void {
@@ -48,5 +47,7 @@ export class TestComponent {
     this.CalStrat();
   }
 
+  
+  
   
 }
