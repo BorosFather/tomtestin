@@ -1,1 +1,25 @@
-<p>test works!</p>
+<h2 class="text-center">Testtömegindex</h2>
+
+<div class="justify-content-center">
+
+    <div class="mt-3 w-25 ">
+        <input type="text" placeholder="Testtömeg (kg)"
+        [formControl]="mass"
+        class="form-control col-xs-4">
+    </div>
+    <div class="mt-3 w-25">
+        <input type="text" placeholder="Testmagasság (m)" 
+        [formControl]="height" 
+        class="form-control"
+        (keyup)="onKey($event)">
+    </div>
+
+    <button (click)="onClickButton()" class="btn btn-dark mt-3">Számít</button>
+
+    
+
+    <div class="mt-3 w-25" *ngIf="indexHide">
+        <input type="text" readonly [formControl]="index" class="form-control" >
+    </div>
+
+</div>
