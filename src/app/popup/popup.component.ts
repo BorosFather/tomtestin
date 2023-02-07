@@ -13,9 +13,10 @@ export class PopupComponent {
 
   }
 
-    openDialog(){
-    this.dialog.open(UpupComponent);
-   }
+  openDialog(){
+  this.dialog.open(UpupComponent);
+    
+  }
 
   
   

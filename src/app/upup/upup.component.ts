@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { PopupComponent } from '../popup/popup.component';
+import { Component, Inject } from '@angular/core';
+import {  MAT_DIALOG_DATA } from '@angular/material/dialog';
+
 
 @Component({
   selector: 'app-upup',
@@ -9,12 +9,10 @@ import { PopupComponent } from '../popup/popup.component';
 })
 export class UpupComponent {
 
-  constructor(public dialog: MatDialog){
+  constructor(){
 
   }
 
-  openDialog(){
-    this.dialog.open(PopupComponent);
-  }
+  
   
 }
